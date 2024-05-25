@@ -129,9 +129,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 </p>
               ))}
             {state.errors !== undefined && (
-              <p className="mt-2 text-sm text-red-500">
-                Missing fields. Failed to create invoice.
-              </p>
+              <p className="mt-2 text-sm text-red-500">{state.message}</p>
             )}
           </div>
         </fieldset>
